@@ -10,3 +10,10 @@
   - get
     - pods
     - services
+  - set image [tipo-do-objeto]/[nome-do-objeto] [nome-do-container]=[nome-da-imagem]
+
+## Registry
+docker run -d -p 1234:5000 --restart always --name registry registry:2
+
+Visualizar containers do kubernetes no terminal aberto
+eval $(minikube docker-env)

@@ -11,6 +11,8 @@
     - pods
     - services
   - set image [tipo-do-objeto]/[nome-do-objeto] [nome-do-container]=[nome-da-imagem]
+  - create
+    - secret generic [secret-name] --from-literal key=value
 
 ## Registry
 docker run -d -p 1234:5000 --restart always --name registry registry:2
